@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer type="module"></script>
+    <title>Weather App</title>
+</head>
+<body>
+    <div class="weather-container">
+    <header>
+        <h1 class="title">Weather App</h1>
+    </header>
+    <form action="" class="form">
+        <div class="search">
+            <input type="text" placeholder="Enter the city" class="search-input">
+            <button class="search-btn">Search</button>
+        </div>
+        <button class="add-btn" type="submit">Add</button>
+    </form>
+    <div class="cities-list"></div>
+
+    <section class="current-weather">
+        <div class="city"></div>
+        <div class="date-and-time"></div>
+        <div class="temperature">
+            <span class="number"></span>
+            <span class="unit">&deg;C</span>
+        </div>
+        <div class="weather-condition-text"></div>
+        <img src="" alt="" class="weather-condition-icon">
+        <div class="extra-info">
+            <div class="wind-speed">
+                <div class="key">Wind-speed</div>
+                <div class="value">
+                    <span class="number"></span> km/h
+                </div>
+            </div>
+            <div class="humidity">
+                <div class="key">Humidity</div>
+                <div class="value">
+                    <span class="number"></span>&percnt;
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="subtitle">Hourly Forecast</div>
+    <section class="hourly-weather">
+    </section>
+
+    <div class="subtitle">Next 2 Days Forecast</div>
+    <section class="daily-weather">
+    </section>
+    <section class="added-cities">
+    </section>
+    </div>
+</body>
+</html>

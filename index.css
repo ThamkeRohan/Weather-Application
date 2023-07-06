@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+   background-color:#DADD98;
+   min-height: 100vh;
+   display: flex;
+   align-items: center;
+   
+}
+.weather-container{
+    width: 550px;
+    padding-bottom: 15px;
+    margin: 0 auto;
+    position: relative;
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    background-color:#29ab86c5
+}
+.title{
+    text-align: center;
+    padding: 20px;
+    font-size: 35px;
+    color: rgb(48, 44, 44);
+    text-decoration: underline;
+}
+.form{
+    display: flex;
+    justify-content: space-around;
+}
+.form .search-input{
+    width: 250px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 15px;
+    border: 1px solid white;
+    margin: 0 5px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.form .search-btn, .form .add-btn{
+    width: 60px;
+    height: 30px;
+    border: 1px solid green;
+    border-radius: 3px;
+    color: green;
+    cursor: pointer;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.current-weather{
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color:lightgreen; */
+    position: relative;
+}
+.current-weather .city{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px;
+}
+.current-weather .date-and-time{
+    font-size: 18px;
+     padding: 5px;
+}
+.current-weather .temperature{
+    position: relative;
+     padding: 5px;
+}
+.current-weather .temperature .number{
+    font-size: 70px;
+    font-weight: bolder;
+}
+.current-weather .temperature .unit{
+    position: absolute;
+    top:10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.current-weather .weather-condition-text{
+    font-size: 20px;
+}
+.current-weather .weather-condition-icon{
+    width: 23%;
+}
+.extra-info{
+    width: 80%;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-around;
+    margin-top: 10px;
+    /* background-color: yellow; */
+}
+.extra-info .key{
+    font-size: 15px;
+    margin-bottom: 2px;
+}
+.extra-info .value{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+.subtitle{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 15px 15px;
+}
+.hourly-weather{
+    overflow-x:scroll;
+    white-space: nowrap;
+}
+.hourly-weather .hour{
+    display: inline-block;
+    text-align: center;
+    margin: 5px 10px;
+    position: relative;
+}
+.daily-weather .day{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 5px;
+    background-color: rgba(128, 128, 128, 0.534);
+    
+}
+
+.cities-list{
+    background-color: rgba(128, 128, 128, 0.932);
+    width: 46%;
+    position: absolute;
+    left: 45px;
+    top: 115px;
+    z-index: 1;
+    border-radius: 3px;
+    padding: 5px;
+    visibility:hidden;
+}
+.cities-list .city{
+    padding: 2px;
+    cursor: pointer;
+    border-bottom: 1px solid grey;
+}
+.current-weather, .subtitle, .hourly-weather, .daily-weather{
+    display: none;
+}
+.city-weather{
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(106, 207, 106, 0.486);
+    margin: 5px;
+    padding: 10px 5px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+}
+.city-weather .city{
+    font-size: 25px;
+    font-weight: bold;
+}
+.city-weather .weather{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 30%;
+}
+.city-weather .temperature{
+    font-size: 20px;
+    font-weight: bold;
+}
+.added-cities{
+    margin-top: 20px;
+}
+
