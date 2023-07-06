@@ -5,7 +5,7 @@ export class DataFetch{
              return [];
         }
         try {
-            const url = `http://api.weatherapi.com/v1/search.json?key=${this.apiKey}&q=${input}`;
+            const url = `https://api.weatherapi.com/v1/search.json?key=${this.apiKey}&q=${input}`;
             const response = await fetch(url);
             const data = await response.json();
             const cities = data.map((city)=>{
@@ -19,7 +19,7 @@ export class DataFetch{
 
     async getWeather(city){
         try {
-            const url = `http://api.weatherapi.com/v1/forecast.json?key=${this.apiKey}&q=${city}&days=3&aqi=no&alerts=no`;
+            const url = `https://api.weatherapi.com/v1/forecast.json?key=${this.apiKey}&q=${city}&days=3&aqi=no&alerts=no`;
             const response = await fetch(url);
             const data = await response.json();
             
@@ -79,7 +79,7 @@ export class DataFetch{
         const citiesWeather = [];
         for(let city of cities){
             let weather = {};
-            let url = `http://api.weatherapi.com/v1/current.json?key=${this.apiKey}&q=${city}&aqi=no`;
+            let url = `https://api.weatherapi.com/v1/current.json?key=${this.apiKey}&q=${city}&aqi=no`;
             const response = await fetch(url);
             const data = await response.json();
             weather.city = data.location.name;
