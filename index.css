@@ -11,6 +11,7 @@ body{
    
 }
 .weather-container{
+    min-width: 300px;
     width: 550px;
     padding-bottom: 15px;
     margin: 0 auto;
@@ -31,7 +32,8 @@ body{
     justify-content: space-around;
 }
 .form .search-input{
-    width: 250px;
+    
+    min-width: 100px;
     height: 30px;
     padding: 5px;
     border-radius: 5px;
